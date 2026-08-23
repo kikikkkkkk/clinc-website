@@ -25,17 +25,25 @@ Text colour on each block is measured, not guessed:
 
 | Block | Text | Ratio |
 | --- | --- | --- |
-| rose `#C9A9A3` | ink | 5.8 |
-| sage `#A3AE9B` | ink | 5.4 |
-| clay `#C79E86` | ink | 5.2 |
-| mist `#A6B4BE` | ink | 5.9 |
-| sand `#CDBFA4` | ink | 6.9 |
-| slate `#66717A` | white | 5.0 |
-| greige ground `#EDE9E3` | ink | 10.3 |
+| rose `#DEC4BD` | ink | 7.6 |
+| sage `#BEC7B5` | ink | 7.2 |
+| clay `#DEBAA1` | ink | 6.9 |
+| mist `#C2CDD6` | ink | 7.7 |
+| sand `#E2D8C0` | ink | 8.8 |
+| slate `#9DAAB4` | ink | 5.3 |
+| greige ground `#F6F3EE` | ink | 11.3 |
 
 Muted palettes are where contrast quietly fails, because everything
-drifts toward the middle. The slate started at `#6E7A82`, which gave
-white 4.4 and missed AA — it was darkened until it cleared.
+drifts toward the middle. The slate band has a genuine dead zone: between
+`#717D86` and `#8E9BA6` neither white nor ink clears AA at any value, so
+it has to sit clear of that band on one side or the other. It is above
+it, on ink, which is why every block on the page takes the same text
+colour.
+
+Watch the opacities when a background is lightened. Several rules inside
+that band were set at `opacity:.8`–`.9` back when the text was white on a
+dark slate; on the lifted colour those same values dropped ink text to
+3.7–4.4. They were raised or removed.
 
 The Bio Rajeu gold sits comfortably here: `#DFC27F` is already a greyed
 warm gold rather than a bright metallic.

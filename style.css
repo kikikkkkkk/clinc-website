@@ -4,20 +4,20 @@
    big rounded blocks — so the structure reads the same at low saturation.
    Colour blocks carry the page; the only photographs are the two product shots.
 
-   Text colour per block is measured, not guessed. All five muted blocks take
-   ink (5.2–6.9). Only the deep slate takes white, at 5.0 — #6E7A82 was the
-   first choice and failed at 4.4.
+   Text colour per block is measured, not guessed. Every block takes ink.
+   Note the mid-tone trap on the slate: between #717D86 and #8E9BA6 neither
+   white nor ink clears AA, so it was lifted clear of that band to #9DAAB4.
 
    System fonts and local assets only — runs fully offline. */
 
 :root{
-  --rose:#C9A9A3;        /* dusty rose      — ink 5.8 */
-  --sage:#A3AE9B;        /* greyed sage     — ink 5.4 */
-  --clay:#C79E86;        /* muted terracotta— ink 5.2 */
-  --mist:#A6B4BE;        /* dusty blue      — ink 5.9 */
-  --sand:#CDBFA4;        /* greyed sand     — ink 6.9 */
-  --deep:#66717A;        /* slate           — white 5.0 */
-  --cream:#EDE9E3;       /* greige ground   — ink 10.3 */
+  --rose:#DEC4BD;        /* dusty rose      — ink 7.6 */
+  --sage:#BEC7B5;        /* greyed sage     — ink 7.2 */
+  --clay:#DEBAA1;        /* muted terracotta— ink 6.9 */
+  --mist:#C2CDD6;        /* dusty blue      — ink 7.7 */
+  --sand:#E2D8C0;        /* greyed sand     — ink 8.8 */
+  --deep:#9DAAB4;        /* lifted slate    — ink 5.3 */
+  --cream:#F6F3EE;       /* greige ground   — ink 11.3 */
   --white:#FFFFFF;
   --ink:#38332F;         /* warm charcoal, not black */
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -141,35 +141,35 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 .card b{font-weight:800;white-space:nowrap}
 
 /* ============ GLOW — the one Bio Rajeu section ============ */
-.glow{background:var(--deep);color:var(--white);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.glow{background:var(--deep);color:var(--ink);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
 .glow-in{
   max-width:var(--wrap);margin:0 auto;padding:clamp(54px,7vw,96px) var(--pad);
   display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(30px,4vw,58px);align-items:start;
 }
 .glow h2{margin-bottom:1rem}
 .glow-lede{font-size:1.14rem;font-weight:600;max-width:46ch;margin-bottom:2rem}
-.glow-body{font-size:.98rem;opacity:.9;max-width:56ch;margin-bottom:2rem}
+.glow-body{font-size:.98rem;max-width:56ch;margin-bottom:2rem}
 .glow-body b{font-weight:800}
 .glow-body em{font-style:italic}
-.glow-fine{font-size:.85rem;opacity:.8;max-width:56ch;margin-top:1.6rem}
+.glow-fine{font-size:.85rem;max-width:56ch;margin-top:1.6rem}
 
 .yesno{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:2rem}
-.yesno ul{list-style:none;background:rgba(255,255,255,.12);border-radius:var(--r);padding:20px 22px}
+.yesno ul{list-style:none;background:rgba(255,255,255,.55);border-radius:var(--r);padding:20px 22px}
 .yesno li{position:relative;padding-left:26px;margin-bottom:.55rem;font-size:.92rem;font-weight:600}
 .yesno li:last-child{margin-bottom:0}
 .no li::before,.yes li::before{position:absolute;left:0;font-weight:800}
-.no li::before{content:"—";opacity:.7}
-.yes li::before{content:"✓";color:var(--white)}
+.no li::before{content:"—";opacity:.85}
+.yes li::before{content:"✓";color:var(--ink)}
 
-.price-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:rgba(255,255,255,.12);border-radius:var(--r);padding:22px 24px}
+.price-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:rgba(255,255,255,.55);border-radius:var(--r);padding:22px 24px}
 .big-price{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.04em;line-height:1}
-.big-price s{font-size:.4em;font-weight:700;opacity:.6;margin-right:.35rem}
+.big-price s{font-size:.4em;font-weight:700;opacity:.8;margin-right:.35rem}
 .pr-note{font-size:.86rem;opacity:.85;margin-bottom:.9rem;max-width:34ch}
 
 .brandline{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:2rem}
 /* the packaging is white with gold foil — the mark sits on white, never on the slate */
 .br{width:64px;height:auto;background:var(--white);border-radius:14px;padding:12px 14px}
-.brandline a{font-size:.85rem;font-weight:800;text-decoration:none;border-bottom:2px solid var(--sand);padding-bottom:2px}
+.brandline a{font-size:.85rem;font-weight:800;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
 
 .glow-pics{display:grid;gap:18px}
 .pic{border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--white)}
