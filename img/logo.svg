@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lumière">
+  <!-- Lumière — light. A flame held in a thin ring, in the studio's gold and brown. -->
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#78634C" stroke-width="1.6"/>
+  <path d="M32 13 C 42.5 23.5 42.5 41.5 32 51 C 21.5 41.5 21.5 23.5 32 13 Z" fill="#DFC27F"/>
+  <path d="M32 16.5 V 47.5" stroke="#78634C" stroke-width="1.1" stroke-linecap="round" opacity=".55"/>
+  <path d="M32 27 L 37 22.5 M32 34 L 37.5 29 M32 27 L 27 22.5 M32 34 L 26.5 29"
+        stroke="#78634C" stroke-width="1" stroke-linecap="round" opacity=".38" fill="none"/>
+</svg>
