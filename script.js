@@ -1,25 +1,23 @@
-/* Sidebar drawer on narrow screens, and current-section highlighting in the
-   sidebar nav. No dependencies — safe to run fully offline. */
+/* Mobile nav, and current-section marking in the top bar.
+   No dependencies — safe to run fully offline. */
 (function () {
   'use strict';
 
-  // Sidebar drawer (mobile only — on desktop .side-body is always visible)
   var burger = document.getElementById('burger');
-  var body = document.getElementById('sideBody');
-  if (burger && body) {
+  var nav = document.getElementById('barNav');
+  if (burger && nav) {
     burger.addEventListener('click', function () {
-      var open = body.classList.toggle('open');
+      var open = nav.classList.toggle('open');
       burger.setAttribute('aria-expanded', String(open));
     });
-    body.addEventListener('click', function (e) {
+    nav.addEventListener('click', function (e) {
       if (e.target.tagName !== 'A') return;
-      body.classList.remove('open');
+      nav.classList.remove('open');
       burger.setAttribute('aria-expanded', 'false');
     });
   }
 
-  // Mark the section currently in view in the sidebar nav
-  var links = document.querySelectorAll('.side-nav a');
+  var links = document.querySelectorAll('.bar-nav a');
   if (!links.length || !('IntersectionObserver' in window)) return;
 
   var byId = {};
