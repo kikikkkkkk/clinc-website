@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BOUNCE">
+  <!-- Badge: same chunky treatment as the rest of the site — pale fill, thick ink edge -->
+  <rect x="2" y="2" width="60" height="60" rx="19" fill="#F4E0D4" stroke="#38332F" stroke-width="4"/>
+  <!-- Bounce: the squash on the floor, the arc, the ball at the top of it -->
+  <ellipse cx="17" cy="47" rx="8" ry="3" fill="#38332F" opacity=".35"/>
+  <path d="M17 45 C 17 24 26 16 37 19" fill="none" stroke="#38332F" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="46" cy="25" r="9" fill="#38332F"/>
+</svg>

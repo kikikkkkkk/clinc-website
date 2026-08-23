@@ -56,6 +56,22 @@ The logo sits on a white tile rather than directly on violet; the
 packaging is white with gold foil, and gold on violet would be unreadable
 anyway.
 
+## Brand mark
+
+`img/logo.svg` — a bounce: the squash on the floor, the arc, the ball at
+the top of it, inside a badge with the same pale fill and thick ink edge
+the rest of the page uses. It appears in the nav and the footer, and is
+also wired up as the favicon.
+
+## Links
+
+The page makes no outbound requests of any kind. There are no external
+links — the Bio Rajeu credit is plain text, not a link — and every asset
+is local, so the site behaves identically with the network unplugged.
+
+Contact address is `hello@bouncebeautybar.fyi`, shown as text rather than
+a `mailto:` link.
+
 ## Deploying to Cloudflare Pages
 
 | Setting | Value |
@@ -75,7 +91,7 @@ without this each one also builds previews of the other's branch.
 index.html    single page, no build step
 style.css     high-saturation palette, chunky outlines
 script.js     mobile menu, FAQ accordion
-img/          product photography and logo
+img/          brand mark, product photography, Bio Rajeu logo
 ```
 
 No dependencies, no external requests — system fonts and local assets
