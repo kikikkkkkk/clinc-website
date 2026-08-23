@@ -1,19 +1,25 @@
 /* BOUNCE Beauty Bar — demo site
-   High-saturation, chunky and rounded. Colour blocks carry the page instead of
-   photography; the only photographs are the two product shots.
-   Text colour per block follows measured contrast:
-     violet -> white (6.1)   pink 5.5 / lime 14.3 / tangerine 7.1 / sky 9.5 -> ink
+   Morandi palette: every hue greyed down, on a greige ground. The chunky
+   treatment stays — thick ink outlines, hard offset shadows, pill buttons,
+   big rounded blocks — so the structure reads the same at low saturation.
+   Colour blocks carry the page; the only photographs are the two product shots.
+
+   Text colour per block is measured, not guessed. All five muted blocks take
+   ink (5.2–6.9). Only the deep slate takes white, at 5.0 — #6E7A82 was the
+   first choice and failed at 4.4.
+
    System fonts and local assets only — runs fully offline. */
 
 :root{
-  --pink:#FF3E8A;
-  --violet:#5B3DF5;
-  --lime:#D4F04A;
-  --tang:#FF7A3D;
-  --sky:#3DC9F5;
-  --cream:#FFF6EC;
+  --rose:#C9A9A3;        /* dusty rose      — ink 5.8 */
+  --sage:#A3AE9B;        /* greyed sage     — ink 5.4 */
+  --clay:#C79E86;        /* muted terracotta— ink 5.2 */
+  --mist:#A6B4BE;        /* dusty blue      — ink 5.9 */
+  --sand:#CDBFA4;        /* greyed sand     — ink 6.9 */
+  --deep:#66717A;        /* slate           — white 5.0 */
+  --cream:#EDE9E3;       /* greige ground   — ink 10.3 */
   --white:#FFFFFF;
-  --ink:#1A1024;
+  --ink:#38332F;         /* warm charcoal, not black */
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --r:26px;
   --pad:clamp(20px,4.5vw,56px);
@@ -46,7 +52,7 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
   display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
   background:var(--ink);color:var(--cream);padding:7px 14px;border-radius:999px;margin-bottom:1.4rem;
 }
-.tag.light{background:var(--lime);color:var(--ink)}
+.tag.light{background:var(--sand);color:var(--ink)}
 .fine{font-size:.84rem;opacity:.72}
 .dim{opacity:.55}
 
@@ -60,14 +66,14 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 .pill.big{padding:16px 34px;font-size:.95rem;box-shadow:var(--hard)}
 .pill-ink{background:var(--ink);color:var(--cream)}
 .pill-line{background:transparent;color:var(--ink)}
-.pill-lime{background:var(--lime);color:var(--ink)}
+.pill-sand{background:var(--sand);color:var(--ink)}
 .pill:hover{transform:translate(-2px,-2px)}
 .pill.big:hover{box-shadow:8px 8px 0 var(--ink)}
 .pill:active{transform:translate(2px,2px)}
 .pill.big:active{box-shadow:2px 2px 0 var(--ink)}
 
 /* ============ TICKER ============ */
-.ticker{background:var(--lime);border-bottom:2px solid var(--ink);overflow:hidden;padding:9px 0}
+.ticker{background:var(--sand);border-bottom:2px solid var(--ink);overflow:hidden;padding:9px 0}
 .tk{display:flex;white-space:nowrap;animation:roll 34s linear infinite;will-change:transform}
 .tk > *{flex:none;padding-right:26px;font-size:.8rem;font-weight:800;letter-spacing:.06em;font-style:normal}
 @keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -93,22 +99,22 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
   padding:clamp(38px,5.5vw,72px) var(--pad) clamp(30px,4vw,54px);
   display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,4vw,56px);align-items:center;
 }
-.hero h1 mark{background:var(--pink);color:var(--ink);padding:0 .12em;border-radius:10px}
+.hero h1 mark{background:var(--rose);color:var(--ink);padding:0 .12em;border-radius:10px}
 .hero .sub{margin-top:1.6rem;font-size:1.1rem;max-width:44ch;opacity:.78}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:2.2rem}
 
 .hero-art{position:relative;aspect-ratio:1/.92;min-height:280px}
 .blob{position:absolute;border:2px solid var(--ink);border-radius:50%}
-.b1{inset:2% 26% 34% 4%;background:var(--sky)}
-.b2{inset:24% 4% 6% 34%;background:var(--pink)}
-.b3{inset:52% 52% 16% 8%;background:var(--lime);border-radius:44% 56% 60% 40%}
+.b1{inset:2% 26% 34% 4%;background:var(--mist)}
+.b2{inset:24% 4% 6% 34%;background:var(--rose)}
+.b3{inset:52% 52% 16% 8%;background:var(--sand);border-radius:44% 56% 60% 40%}
 .sticker{
   position:absolute;background:var(--cream);border:2px solid var(--ink);border-radius:999px;
   padding:12px 20px;font-size:.78rem;font-weight:800;line-height:1.2;text-align:center;
   box-shadow:var(--hard);
 }
 .s1{top:6%;right:2%;transform:rotate(7deg)}
-.s2{bottom:6%;left:0;transform:rotate(-8deg);background:var(--lime)}
+.s2{bottom:6%;left:0;transform:rotate(-8deg);background:var(--sand)}
 
 /* ============ FACT PILLS ============ */
 .facts{
@@ -123,19 +129,19 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 /* ============ MENU CARDS ============ */
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{border:2px solid var(--ink);border-radius:var(--r);padding:26px 24px 28px;box-shadow:var(--hard)}
-.c-pink{background:var(--pink)}
-.c-lime{background:var(--lime)}
-.c-sky{background:var(--sky)}
-.c-tang{background:var(--tang)}
+.c-rose{background:var(--rose)}
+.c-sage{background:var(--sage)}
+.c-mist{background:var(--mist)}
+.c-clay{background:var(--clay)}
 .c-n{font-size:.76rem;font-weight:800;letter-spacing:.14em;opacity:.6}
 .card h3{margin:.5rem 0 1.2rem}
 .card ul{list-style:none;border-top:2px solid var(--ink)}
-.card li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid rgba(26,16,36,.22);font-size:.92rem}
+.card li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid rgba(56,51,47,.22);font-size:.92rem}
 .card li:last-child{border-bottom:0}
 .card b{font-weight:800;white-space:nowrap}
 
 /* ============ GLOW — the one Bio Rajeu section ============ */
-.glow{background:var(--violet);color:var(--white);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.glow{background:var(--deep);color:var(--white);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
 .glow-in{
   max-width:var(--wrap);margin:0 auto;padding:clamp(54px,7vw,96px) var(--pad);
   display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(30px,4vw,58px);align-items:start;
@@ -153,7 +159,7 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 .yesno li:last-child{margin-bottom:0}
 .no li::before,.yes li::before{position:absolute;left:0;font-weight:800}
 .no li::before{content:"—";opacity:.7}
-.yes li::before{content:"✓";color:var(--lime)}
+.yes li::before{content:"✓";color:var(--white)}
 
 .price-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:rgba(255,255,255,.12);border-radius:var(--r);padding:22px 24px}
 .big-price{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.04em;line-height:1}
@@ -161,9 +167,9 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 .pr-note{font-size:.86rem;opacity:.85;margin-bottom:.9rem;max-width:34ch}
 
 .brandline{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:2rem}
-/* the packaging is white with gold foil — the mark sits on white, never on the violet */
+/* the packaging is white with gold foil — the mark sits on white, never on the slate */
 .br{width:64px;height:auto;background:var(--white);border-radius:14px;padding:12px 14px}
-.brandline a{font-size:.85rem;font-weight:800;text-decoration:none;border-bottom:2px solid var(--lime);padding-bottom:2px}
+.brandline a{font-size:.85rem;font-weight:800;text-decoration:none;border-bottom:2px solid var(--sand);padding-bottom:2px}
 
 .glow-pics{display:grid;gap:18px}
 .pic{border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--white)}
@@ -175,9 +181,9 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 /* ============ REVIEWS ============ */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .q{border:2px solid var(--ink);border-radius:var(--r);padding:26px 24px;box-shadow:var(--hard)}
-.q-lime{background:var(--lime);transform:rotate(-1.2deg)}
-.q-pink{background:var(--pink)}
-.q-sky{background:var(--sky);transform:rotate(1.2deg)}
+.q-sage{background:var(--sand);transform:rotate(-1.2deg)}
+.q-rose{background:var(--rose)}
+.q-mist{background:var(--mist);transform:rotate(1.2deg)}
 .q p{font-size:1.02rem;font-weight:600}
 .q cite{display:block;margin-top:1rem;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-style:normal;opacity:.65}
 
@@ -194,7 +200,7 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
   font-size:1.5rem;font-weight:800;line-height:1;
 }
 .asks details[open] summary::after{content:"–"}
-.asks details[open] summary{background:var(--lime);border-bottom:2px solid var(--ink)}
+.asks details[open] summary{background:var(--sand);border-bottom:2px solid var(--ink)}
 .asks details p{padding:16px 22px 20px;font-size:.95rem;opacity:.8}
 
 /* ============ BOOK ============ */
@@ -216,11 +222,11 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
   font-family:var(--sans);font-size:.98rem;font-weight:500;
   text-transform:none;letter-spacing:normal;
 }
-.form input::placeholder,.form textarea::placeholder{color:rgba(26,16,36,.45)}
-.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--lime)}
+.form input::placeholder,.form textarea::placeholder{color:rgba(56,51,47,.45)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--sand)}
 .form textarea{resize:vertical}
-.form .pill-ink{background:var(--lime);color:var(--ink);border-color:var(--ink);justify-self:start;box-shadow:5px 5px 0 var(--lime)}
-.form .pill-ink:hover{box-shadow:8px 8px 0 var(--lime)}
+.form .pill-ink{background:var(--sand);color:var(--ink);border-color:var(--ink);justify-self:start;box-shadow:5px 5px 0 var(--sand)}
+.form .pill-ink:hover{box-shadow:8px 8px 0 var(--sand)}
 .form .fine{opacity:.6}
 
 /* ============ FOOTER ============ */
@@ -237,7 +243,7 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 
 @media (max-width:1040px){
   .cards,.quotes{grid-template-columns:1fr 1fr}
-  .q-lime,.q-sky{transform:none}
+  .q-sage,.q-mist{transform:none}
 }
 @media (max-width:900px){
   .hero,.glow-in,.book-in{grid-template-columns:1fr}
@@ -254,10 +260,10 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
     background:var(--cream);border-bottom:2px solid var(--ink);padding:8px var(--pad) 20px;
   }
   .links.open{display:flex}
-  .links a:not(.pill){padding:15px 0;border-bottom:1px solid rgba(26,16,36,.15)}
+  .links a:not(.pill){padding:15px 0;border-bottom:1px solid rgba(56,51,47,.15)}
   .links .pill{margin-top:16px;text-align:center}
   .cards,.quotes,.yesno,.f2,.glow-pics{grid-template-columns:1fr}
-  .q-pink{transform:none}
+  .q-rose{transform:none}
   .p1,.p2{transform:none}
   .facts{justify-content:flex-start}
   .price-row{gap:16px}

@@ -12,24 +12,33 @@ same layout.
 
 ## Design
 
-High-saturation and chunky: thick ink outlines, hard offset shadows,
-pill buttons, big rounded colour blocks and heavy type. Aimed at a
-younger client than the Lumière site on the other branch, and built the
-opposite way round — colour blocks carry the page, so the only two
-photographs on it are the product shots.
+Morandi palette — every hue greyed down, on a greige ground. The chunky
+treatment is unchanged: thick ink outlines, hard offset shadows, pill
+buttons, big rounded colour blocks and heavy type. Dropping the
+saturation without touching the structure is the whole idea; the layout
+reads the same, the volume comes down.
 
-Text colour on each block is set by measured contrast, not by eye:
+The outline colour is a warm charcoal `#38332F` rather than black —
+against muted blocks, true black reads as a harsh edge.
+
+Text colour on each block is measured, not guessed:
 
 | Block | Text | Ratio |
 | --- | --- | --- |
-| violet `#5B3DF5` | white | 6.1 |
-| pink `#FF3E8A` | ink | 5.5 |
-| tangerine `#FF7A3D` | ink | 7.1 |
-| sky `#3DC9F5` | ink | 9.5 |
-| lime `#D4F04A` | ink | 14.3 |
+| rose `#C9A9A3` | ink | 5.8 |
+| sage `#A3AE9B` | ink | 5.4 |
+| clay `#C79E86` | ink | 5.2 |
+| mist `#A6B4BE` | ink | 5.9 |
+| sand `#CDBFA4` | ink | 6.9 |
+| slate `#66717A` | white | 5.0 |
+| greige ground `#EDE9E3` | ink | 10.3 |
 
-Violet is the only one of the five that takes white text — white on pink
-is 3.3 and fails, which is the usual way a palette this loud goes wrong.
+Muted palettes are where contrast quietly fails, because everything
+drifts toward the middle. The slate started at `#6E7A82`, which gave
+white 4.4 and missed AA — it was darkened until it cleared.
+
+The Bio Rajeu gold sits comfortably here: `#DFC27F` is already a greyed
+warm gold rather than a bright metallic.
 
 ## The Bio Rajeu section
 
