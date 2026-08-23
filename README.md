@@ -12,38 +12,34 @@ same layout.
 
 ## Design
 
-Morandi palette — every hue greyed down, on a greige ground. The chunky
-treatment is unchanged: thick ink outlines, hard offset shadows, pill
-buttons, big rounded colour blocks and heavy type. Dropping the
-saturation without touching the structure is the whole idea; the layout
-reads the same, the volume comes down.
+Pale, low-saturation palette on a near-white ground — powder tones
+rather than the greyed mid-tones this started as. The chunky treatment is
+unchanged: thick ink outlines, hard offset shadows, pill buttons, big
+rounded blocks and heavy type.
 
-The outline colour is a warm charcoal `#38332F` rather than black —
-against muted blocks, true black reads as a harsh edge.
+At this lightness the outlines are structural, not decorative. Block and
+ground sit only 1.1–1.3 apart, so without the 2px ink edge the blocks
+would not separate from the page at all.
 
-Text colour on each block is measured, not guessed:
+Every block takes ink text:
 
-| Block | Text | Ratio |
-| --- | --- | --- |
-| rose `#DEC4BD` | ink | 7.6 |
-| sage `#BEC7B5` | ink | 7.2 |
-| clay `#DEBAA1` | ink | 6.9 |
-| mist `#C2CDD6` | ink | 7.7 |
-| sand `#E2D8C0` | ink | 8.8 |
-| slate `#9DAAB4` | ink | 5.3 |
-| greige ground `#F6F3EE` | ink | 11.3 |
+| Block | Ratio |
+| --- | --- |
+| peach `#F4E0D4` | 9.8 |
+| mint `#DAE7DC` | 9.8 |
+| sky `#D5E5EF` | 9.7 |
+| butter `#F3EBD4` | 10.5 |
+| lilac `#E3DCEC` (Bio Rajeu band) | 9.3 |
+| blush `#F6DCDC` (accent) | 9.6 |
+| ground `#FBF9F6` | 11.9 |
 
-Muted palettes are where contrast quietly fails, because everything
-drifts toward the middle. The slate band has a genuine dead zone: between
-`#717D86` and `#8E9BA6` neither white nor ink clears AA at any value, so
-it has to sit clear of that band on one side or the other. It is above
-it, on ink, which is why every block on the page takes the same text
-colour.
+The booking section and footer were solid charcoal, which read as a slab
+once the rest of the page went pale; both are now light.
 
-Watch the opacities when a background is lightened. Several rules inside
-that band were set at `opacity:.8`–`.9` back when the text was white on a
-dark slate; on the lifted colour those same values dropped ink text to
-3.7–4.4. They were raised or removed.
+Pale grounds raise base contrast but expose anything set at low opacity.
+Four rules — the card numbers, review citations, the logo subtitle and
+the footer notice — were sitting at `opacity:.55`–`.65` and landed at
+3.2–3.8. All raised to `.8`.
 
 The Bio Rajeu gold sits comfortably here: `#DFC27F` is already a greyed
 warm gold rather than a bright metallic.
