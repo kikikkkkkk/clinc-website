@@ -106,6 +106,10 @@ where they go.
 
 ## Content notice
 
-The business name, address, staff and reviews are fictional, and the
-footer says so. Bio Rajeu product information and photography are
-genuine. The page is marked `noindex, nofollow`.
+The business, address, staff and reviews are invented. The on-page
+labelling that said so has been removed at the owner's request, so
+nothing on the page itself now marks it as a mockup — worth knowing,
+since the branch deploys to a public Cloudflare Pages URL. The page is
+still marked `noindex, nofollow`.
+
+Bio Rajeu product information and photography are genuine.

@@ -52,7 +52,6 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 }
 .tag.light{background:var(--blush);color:var(--ink)}
 .fine{font-size:.84rem;opacity:.72}
-.dim{opacity:.8}
 
 /* ============ PILLS / BUTTONS ============ */
 .pill{
@@ -185,7 +184,6 @@ h3{font-size:1.5rem;letter-spacing:-.03em}
 .q-peach{background:var(--peach)}
 .q-sky{background:var(--sky);transform:rotate(1.2deg)}
 .q p{font-size:1.02rem;font-weight:600}
-.q cite{display:block;margin-top:1rem;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-style:normal;opacity:.8}
 
 /* ============ FAQ ============ */
 .asks{display:grid;gap:12px;max-width:860px}
