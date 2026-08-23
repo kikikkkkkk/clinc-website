@@ -33,6 +33,24 @@ The section sits on a slightly lighter band rather than a dark plate, and
 the logo sits on white — the packaging is white with gold foil, so this
 matches the product rather than fighting it.
 
+## Illustration
+
+There is no salon photography, so the page is carried by drawn SVG line
+art rather than stock images or empty space:
+
+| File | What it is |
+| --- | --- |
+| `img/room.svg` | Line drawing of treatment room two — opening spread |
+| `img/carrier.svg` | Diagram comparing free actives against vesicle-carried actives across the skin layers |
+| *(inline)* | Four category marks — skin, body, brows, hair removal |
+
+The carrier diagram is explanatory rather than decorative: it is the
+answer to why the serum needs a carrier at all. Both files are a few
+kilobytes, scale without blurring and need no network.
+
+Drop real studio photography in and the opening spread and the two
+product figures are the places it goes.
+
 ## Deploying to Cloudflare Pages
 
 | Setting | Value |
@@ -52,7 +70,7 @@ without this each one also builds previews of the other's branch.
 index.html    single page, no build step
 style.css     cool neutral palette, no accent
 script.js     mobile nav, current-section marking
-img/          product photography and logo
+img/          line illustrations, product photography, logo
 ```
 
 No dependencies, no external requests — system fonts and local assets

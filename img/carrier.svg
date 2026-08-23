@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="carrierTitle carrierDesc">
+  <title id="carrierTitle">How a phospholipid micro-vesicle carries actives</title>
+  <desc id="carrierDesc">A cross-section of skin comparing free actives, which collect at the surface, with actives carried inside phospholipid vesicles, which travel further into the epidermis.</desc>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+
+    <!-- ============ column headings ============ -->
+    <text x="330" y="42" text-anchor="middle" font-size="14" letter-spacing="2.6" fill="#666862">FREE ACTIVES</text>
+    <text x="710" y="42" text-anchor="middle" font-size="14" letter-spacing="2.6" fill="#222422">CARRIED IN VESICLES</text>
+    <path d="M510 24 V400" stroke="#DCDCD8" stroke-width="1" stroke-dasharray="3 5"/>
+
+    <!-- ============ skin layers ============ -->
+    <g stroke="#DCDCD8" stroke-width="1" fill="none">
+      <path d="M150 92 H880"/>
+      <path d="M150 148 H880"/>
+      <path d="M150 268 H880"/>
+      <path d="M150 384 H880"/>
+    </g>
+
+    <!-- stratum corneum texture -->
+    <g stroke="#E4E4E0" stroke-width="1" fill="none" opacity=".9">
+      <path d="M150 120 H880"/>
+      <path d="M186 92 V148 M258 92 V148 M330 92 V148 M402 92 V148 M474 92 V148
+               M546 92 V148 M618 92 V148 M690 92 V148 M762 92 V148 M834 92 V148"/>
+    </g>
+
+    <!-- layer labels -->
+    <g font-size="13" letter-spacing="1.6" fill="#8E908B" text-anchor="end">
+      <text x="128" y="76">SURFACE</text>
+      <text x="128" y="124">STRATUM</text>
+      <text x="128" y="140">CORNEUM</text>
+      <text x="128" y="212">EPIDERMIS</text>
+      <text x="128" y="330">DERMIS</text>
+    </g>
+
+    <!-- ============ LEFT: free actives pile up at the surface ============ -->
+    <g fill="#8E908B">
+      <circle cx="212" cy="80" r="4"/><circle cx="248" cy="72" r="4"/><circle cx="286" cy="82" r="4"/>
+      <circle cx="322" cy="70" r="4"/><circle cx="360" cy="80" r="4"/><circle cx="398" cy="74" r="4"/>
+      <circle cx="440" cy="82" r="4"/><circle cx="230" cy="100" r="4"/><circle cx="268" cy="104" r="4"/>
+      <circle cx="308" cy="98" r="4"/><circle cx="346" cy="106" r="4"/><circle cx="386" cy="100" r="4"/>
+      <circle cx="424" cy="104" r="4"/><circle cx="252" cy="126" r="4"/><circle cx="330" cy="130" r="4"/>
+      <circle cx="404" cy="124" r="4"/>
+    </g>
+    <!-- a couple stall in the corneum -->
+    <g fill="#8E908B" opacity=".55">
+      <circle cx="290" cy="142" r="4"/><circle cx="368" cy="144" r="4"/>
+    </g>
+    <path d="M330 168 v34" stroke="#DCDCD8" stroke-width="1" stroke-dasharray="3 4"/>
+    <text x="330" y="222" text-anchor="middle" font-size="13" letter-spacing="1.4" fill="#8E908B">little goes further</text>
+
+    <!-- ============ RIGHT: vesicles descend ============ -->
+    <!-- descent path -->
+    <path d="M620 74 C 640 140 660 190 690 236" stroke="#DCDCD8" stroke-width="1" stroke-dasharray="3 4" fill="none"/>
+    <path d="M760 74 C 748 140 736 196 716 244" stroke="#DCDCD8" stroke-width="1" stroke-dasharray="3 4" fill="none"/>
+
+    <!-- vesicles: bilayer ring with actives inside -->
+    <g fill="none" stroke="#222422" stroke-width="1.1">
+      <g>
+        <circle cx="620" cy="74" r="15"/><circle cx="620" cy="74" r="10.5" opacity=".45"/>
+        <circle cx="617" cy="72" r="2.4" fill="#222422" stroke="none"/>
+        <circle cx="624" cy="77" r="2.4" fill="#222422" stroke="none"/>
+      </g>
+      <g>
+        <circle cx="760" cy="74" r="15"/><circle cx="760" cy="74" r="10.5" opacity=".45"/>
+        <circle cx="757" cy="72" r="2.4" fill="#222422" stroke="none"/>
+        <circle cx="764" cy="77" r="2.4" fill="#222422" stroke="none"/>
+      </g>
+      <g>
+        <circle cx="648" cy="140" r="14"/><circle cx="648" cy="140" r="9.8" opacity=".45"/>
+        <circle cx="645" cy="138" r="2.3" fill="#222422" stroke="none"/>
+        <circle cx="652" cy="143" r="2.3" fill="#222422" stroke="none"/>
+      </g>
+      <g>
+        <circle cx="742" cy="146" r="14"/><circle cx="742" cy="146" r="9.8" opacity=".45"/>
+        <circle cx="739" cy="144" r="2.3" fill="#222422" stroke="none"/>
+        <circle cx="746" cy="149" r="2.3" fill="#222422" stroke="none"/>
+      </g>
+      <g>
+        <circle cx="678" cy="204" r="13"/><circle cx="678" cy="204" r="9" opacity=".45"/>
+        <circle cx="675" cy="202" r="2.2" fill="#222422" stroke="none"/>
+        <circle cx="682" cy="207" r="2.2" fill="#222422" stroke="none"/>
+      </g>
+      <g>
+        <circle cx="722" cy="216" r="13"/><circle cx="722" cy="216" r="9" opacity=".45"/>
+        <circle cx="719" cy="214" r="2.2" fill="#222422" stroke="none"/>
+        <circle cx="726" cy="219" r="2.2" fill="#222422" stroke="none"/>
+      </g>
+      <!-- releasing in the epidermis -->
+      <g opacity=".7">
+        <circle cx="700" cy="252" r="12" stroke-dasharray="3 3"/>
+      </g>
+    </g>
+    <g fill="#222422">
+      <circle cx="682" cy="264" r="2.6"/><circle cx="712" cy="266" r="2.6"/>
+      <circle cx="696" cy="278" r="2.6"/><circle cx="726" cy="282" r="2.6"/>
+      <circle cx="668" cy="284" r="2.6"/><circle cx="706" cy="296" r="2.6"/>
+    </g>
+    <text x="700" y="330" text-anchor="middle" font-size="13" letter-spacing="1.4" fill="#666862">released deeper in the epidermis</text>
+
+    <!-- ============ legend: the vesicle enlarged ============ -->
+    <g transform="translate(150 412)">
+      <circle cx="34" cy="34" r="32" fill="none" stroke="#222422" stroke-width="1.1"/>
+      <circle cx="34" cy="34" r="23" fill="none" stroke="#222422" stroke-width="1.1" opacity=".45"/>
+      <circle cx="28" cy="30" r="3.4" fill="#222422"/>
+      <circle cx="40" cy="38" r="3.4" fill="#222422"/>
+      <circle cx="33" cy="43" r="3.4" fill="#222422"/>
+      <path d="M74 22 H100" stroke="#DCDCD8" stroke-width="1"/>
+      <text x="110" y="20" font-size="14" letter-spacing="1.6" fill="#222422">PHOSPHOLIPID BILAYER</text>
+      <text x="110" y="40" font-size="13" fill="#666862">the shell — the same structure cells use to signal</text>
+      <path d="M74 58 H100" stroke="#DCDCD8" stroke-width="1"/>
+      <text x="110" y="62" font-size="14" letter-spacing="1.6" fill="#222422">ACTIVES</text>
+      <text x="110" y="82" font-size="13" fill="#666862">peptides, Myrothamnus extract, hyaluronic acid</text>
+    </g>
+
+  </g>
+</svg>
