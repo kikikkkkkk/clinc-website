@@ -8,19 +8,25 @@ same layout.
 
 ## Design
 
-Monochrome — near-black, bone, and the Bio Rajeu logo gold as the only
-accent. Heavy uppercase display type and full-width black bands carry the
-page in place of photography, which is deliberate: the reference look
-depends on a photo library this site does not have yet. Drop real studio
-photography in and the hero, service grid and studio section all have
-room for it.
+An editorial page, not a stack of sections. The geometry is a **fixed
+sidebar and one scrolling document column** rather than the centred
+container of full-width bands used on the Lumière branch — which is the
+point: the two sites differ in page architecture, not palette.
 
-Structurally distinct from the Lumière site on the other branch: dark
-sticky nav, full-bleed black hero with an outlined word, a scrolling
-marquee band, a four-column service grid, a named three-stage method, a
-gold email-signup band, and a footer service menu. No price list —
-pricing runs through a free consultation, so the page is a booking funnel
-rather than a menu.
+What replaces the usual furniture:
+
+| Usual pattern | Here |
+| --- | --- |
+| Section header blocks | Numbered running heads with a hairline |
+| Card grids | A numbered index with rules, like a printed menu |
+| Accordion FAQ | A definition list of practical facts |
+| Boxed testimonials | Pull quotes set into the text flow |
+| Boxed form fields | Underlined fields, inline in the page |
+| Sans body text | Serif body, two-column with a drop cap |
+
+Paper and ink with oxblood as the accent. The one Bio Rajeu section is
+the single visual break: a dark plate that runs to the edges of the
+document column, carrying the product photography.
 
 ## Deploying to Cloudflare Pages
 
@@ -39,8 +45,8 @@ without this each one also builds previews of the other's branch.
 
 ```
 index.html    single page, no build step
-style.css     monochrome palette, uppercase display type
-script.js     mobile menu, FAQ accordion
+style.css     editorial layout, paper/ink/oxblood
+script.js     sidebar drawer, current-section highlighting
 img/          product photography and logo
 ```
 
@@ -57,10 +63,11 @@ All body text meets WCAG AA on its background:
 
 | Colour | On | Ratio |
 | --- | --- | --- |
-| `#A8A29A` body | `#0E0E0E` | 7.6 |
-| `#DFC27F` gold | `#0E0E0E` | 11.2 |
-| `#6B665E` body | white / bone | 5.1 |
-| `#0E0E0E` on gold band | `#DFC27F` | 11.2 |
+| `#17150F` ink | paper `#FBF9F5` | 17.4 |
+| `#5E594E` grey | paper | 6.6 |
+| `#8C2F26` oxblood | paper | 7.8 |
+| `#DFC27F` gold | ink plate | 10.6 |
+| `#A9A296` grey | ink plate | 7.2 |
 
 ## Content notice
 

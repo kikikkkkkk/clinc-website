@@ -1,32 +1,42 @@
-/* Sticky nav state, mobile drawer, FAQ accordion.
-   No dependencies — safe to run fully offline. */
+/* Sidebar drawer on narrow screens, and current-section highlighting in the
+   sidebar nav. No dependencies — safe to run fully offline. */
 (function () {
   'use strict';
 
-  // Mobile drawer
+  // Sidebar drawer (mobile only — on desktop .side-body is always visible)
   var burger = document.getElementById('burger');
-  var drawer = document.getElementById('navLinks');
-  if (burger && drawer) {
+  var body = document.getElementById('sideBody');
+  if (burger && body) {
     burger.addEventListener('click', function () {
-      var open = drawer.classList.toggle('open');
+      var open = body.classList.toggle('open');
       burger.setAttribute('aria-expanded', String(open));
     });
-    drawer.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') {
-        drawer.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-      }
+    body.addEventListener('click', function (e) {
+      if (e.target.tagName !== 'A') return;
+      body.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
     });
   }
 
-  // Close any open FAQ item when another is opened
-  var faqs = document.querySelectorAll('#faq details');
-  Array.prototype.forEach.call(faqs, function (d) {
-    d.addEventListener('toggle', function () {
-      if (!d.open) return;
-      Array.prototype.forEach.call(faqs, function (other) {
-        if (other !== d) other.open = false;
-      });
-    });
+  // Mark the section currently in view in the sidebar nav
+  var links = document.querySelectorAll('.side-nav a');
+  if (!links.length || !('IntersectionObserver' in window)) return;
+
+  var byId = {};
+  var targets = [];
+  Array.prototype.forEach.call(links, function (a) {
+    var el = document.querySelector(a.getAttribute('href'));
+    if (!el) return;
+    byId[el.id] = a;
+    targets.push(el);
   });
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var a = byId[entry.target.id];
+      if (a) a.classList.toggle('here', entry.isIntersecting);
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+
+  targets.forEach(function (el) { io.observe(el); });
 })();

@@ -5,340 +5,273 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Serein — Aesthetic Studio, East Austin</title>
-<meta name="description" content="A studio on East 6th for skin, body and brows. We work in courses, not one-off appointments.">
+<meta name="description" content="A three-room studio on East 6th for skin, body and brows. By appointment.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Announcement bar — edit or delete this block freely -->
-<a class="promo-bar" href="#signature">
-  <strong>Offer</strong>
-  <span>Signature firming course of six — <b>$499</b> <s>$800</s></span>
-  <em>Book a consultation &rarr;</em>
-</a>
+<div class="shell">
 
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="#top">
-      <span class="brand-name">Serein</span>
-      <span class="brand-sub">Aesthetic Studio</span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#services">Services</a>
-      <a href="#method">The Method</a>
-      <a href="#signature">Signature</a>
-      <a href="#studio">Studio</a>
-      <a href="#faq">FAQs</a>
-      <a class="btn btn-sm" href="#book">Book now</a>
-    </nav>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="kicker gold">East Austin · By appointment</p>
-      <h1>Better skin<br>isn't a<br><span class="outline">one-off</span></h1>
-      <p class="lede">A studio on East 6th for skin, body and brows. We work in courses rather than single appointments, because a single appointment has never changed anyone's skin.</p>
-      <div class="hero-cta">
-        <a class="btn btn-gold" href="#book">Book a consultation</a>
-        <a class="link-arrow" href="#services">What we do <span>&rarr;</span></a>
-      </div>
+  <!-- ============ FIXED SIDEBAR ============ -->
+  <aside class="side" id="side">
+    <div class="side-top">
+      <a class="brand" href="#top">
+        <span class="brand-name">Serein</span>
+        <span class="brand-sub">Aesthetic Studio</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <!-- Two identical halves; the track shifts exactly -50% so the loop is seamless -->
-    <div class="hero-marquee" aria-hidden="true">
-      <div class="mq-track">
-        <span>Skin</span><i>·</i><span>Body</span><i>·</i><span>Brows &amp; Lashes</span><i>·</i><span>Hair Removal</span><i>·</i><span>Courses of Six</span><i>·</i><span>Free Mapping</span><i>·</i><span>East Austin</span><i>·</i><span>By Appointment</span><i>·</i>
-        <span>Skin</span><i>·</i><span>Body</span><i>·</i><span>Brows &amp; Lashes</span><i>·</i><span>Hair Removal</span><i>·</i><span>Courses of Six</span><i>·</i><span>Free Mapping</span><i>·</i><span>East Austin</span><i>·</i><span>By Appointment</span><i>·</i>
+
+    <div class="side-body" id="sideBody">
+      <nav class="side-nav">
+        <a href="#studio"><b>01</b> The studio</a>
+        <a href="#treatments"><b>02</b> Treatments</a>
+        <a href="#signature"><b>03</b> Signature course</a>
+        <a href="#visiting"><b>04</b> Visiting</a>
+        <a href="#book"><b>05</b> Booking</a>
+      </nav>
+
+      <div class="side-meta">
+        <p class="lbl">Address</p>
+        <p>1120 East 6th Street, Suite 2<br>Austin, TX 78702<br><span class="dim">Above the record shop</span></p>
+
+        <p class="lbl">Hours</p>
+        <table class="hours">
+          <tr><th>Tue–Thu</th><td>11–19</td></tr>
+          <tr><th>Fri</th><td>11–20</td></tr>
+          <tr><th>Sat</th><td>10–18</td></tr>
+          <tr><th>Sun–Mon</th><td>Closed</td></tr>
+        </table>
+
+        <p class="lbl">Enquiries</p>
+        <p><a href="mailto:hello@sereinstudio.com">hello@sereinstudio.com</a></p>
       </div>
+
+      <a class="btn side-btn" href="#book">Book a mapping</a>
+      <p class="side-fine">Consultations are free and take twenty minutes. By appointment only.</p>
     </div>
-  </section>
+  </aside>
 
-  <!-- ============ STATEMENT ============ -->
-  <section class="statement">
-    <div class="wrap">
-      <p class="kicker">Whole-face, whole-body</p>
-      <p class="big">We don't sell one-off appointments or protocols pulled off a shelf. Every course starts with a proper reading of your skin, and gets rebuilt as it changes.</p>
-      <a class="btn" href="#method">How the method works</a>
-    </div>
-  </section>
+  <!-- ============ DOCUMENT ============ -->
+  <main class="doc" id="top">
 
-  <!-- ============ SERVICES ============ -->
-  <section class="section dark" id="services">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker gold">Services</p>
-        <h2>Four things, done properly</h2>
+    <!-- masthead -->
+    <header class="masthead">
+      <p class="over">East Austin · Est. 2018</p>
+      <h1>Skin is a long<br>argument, not<br>an afternoon.</h1>
+      <p class="standfirst">Serein is a three-room studio above a record shop on East 6th. We work in courses rather than single appointments, and we will tell you at the consultation if we think a course isn't worth your money.</p>
+      <dl class="mast-meta">
+        <div><dt>Rooms</dt><dd>Three</dd></div>
+        <div><dt>Therapists</dt><dd>Four, licensed in Texas</dd></div>
+        <div><dt>Consultation</dt><dd>Free · 20 minutes</dd></div>
+        <div><dt>Commission</dt><dd>Nobody here works on it</dd></div>
+      </dl>
+    </header>
+
+    <!-- 01 THE STUDIO -->
+    <section id="studio">
+      <p class="run"><b>01</b> The studio</p>
+      <div class="cols">
+        <p><span class="drop">S</span>erein opened in 2018 with two rooms and one therapist. There are three rooms and four of us now, which is as large as it is going to get — past that you stop knowing whose skin is whose, and the whole point of the place is that we remember.</p>
+        <p>Nadia Okonjo runs the studio and does every consultation herself. Between the four of us there are forty years in skin, body and brows. Everyone is licensed in Texas, and nobody is paid a percentage of what they sell you, which is the single most useful thing we can tell you about how the advice works.</p>
+        <p>What we do is beauty work: topical, manual, and wax. No injectables, no needles, no prescriptions. If what you came in for needs a clinician, we will say so and point you at one rather than sell you the nearest thing we happen to stock.</p>
+        <p>The room is on the first floor and there is no lift, which we know is a problem. Email ahead and we will move you to the ground-floor room two doors down.</p>
       </div>
-      <div class="svc-grid">
+      <blockquote class="pull">
+        <p>Nadia told me at the consultation that two of the four things I came in asking for weren't worth doing.</p>
+        <cite>Sample review · illustrative</cite>
+      </blockquote>
+    </section>
 
-        <article class="svc">
-          <span class="svc-n">01</span>
-          <h3>Skin</h3>
-          <p>Deep cleanses, gentle resurfacing, hydration and firming courses. Everything is barrier-first — nothing here will leave you peeling for a week.</p>
-          <ul>
-            <li>Signature firming course</li>
-            <li>Resurfacing course of six</li>
-            <li>Deep hydration facial</li>
-            <li>Express facial</li>
-          </ul>
-        </article>
+    <!-- 02 TREATMENTS -->
+    <section id="treatments">
+      <p class="run"><b>02</b> Treatments</p>
+      <p class="intro">Everything below is available as a single appointment. We are straightforward that courses are what actually change anything, and equally straightforward that plenty of people come once a season and are perfectly happy.</p>
 
-        <article class="svc">
-          <span class="svc-n">02</span>
-          <h3>Body</h3>
-          <p>Contouring wraps, salt and enzyme scrubs, lymphatic and deep tissue work. Booked as courses because one wrap does nothing that lasts.</p>
-          <ul>
-            <li>Contouring wrap course</li>
-            <li>Salt and enzyme scrub</li>
-            <li>Lymphatic drainage</li>
-            <li>Deep tissue massage</li>
-          </ul>
-        </article>
+      <ol class="index">
+        <li>
+          <span class="ix-n">01</span>
+          <div class="ix-main">
+            <h3>Signature firming course</h3>
+            <p>Our one signature course, built on the studio's product line. Six sessions, detailed overleaf.</p>
+          </div>
+          <div class="ix-meta"><span>6 × 50 min</span><b>$499</b></div>
+        </li>
+        <li>
+          <span class="ix-n">02</span>
+          <div class="ix-main">
+            <h3>Resurfacing course</h3>
+            <p>Enzymatic and acid work layered slowly across six sessions. Brightens and evens texture without a week of peeling afterwards.</p>
+          </div>
+          <div class="ix-meta"><span>6 × 60 min</span><b>$620</b></div>
+        </li>
+        <li>
+          <span class="ix-n">03</span>
+          <div class="ix-main">
+            <h3>Deep hydration facial</h3>
+            <p>Layered humectants, a cooling gel mask and lymphatic massage. The one people book in February.</p>
+          </div>
+          <div class="ix-meta"><span>75 min</span><b>$140</b></div>
+        </li>
+        <li>
+          <span class="ix-n">04</span>
+          <div class="ix-main">
+            <h3>Express facial</h3>
+            <p>Cleanse, gentle exfoliation, mask, SPF. Enough to do something, short enough to take a lunch hour.</p>
+          </div>
+          <div class="ix-meta"><span>30 min</span><b>$75</b></div>
+        </li>
+        <li>
+          <span class="ix-n">05</span>
+          <div class="ix-main">
+            <h3>Contouring wrap course</h3>
+            <p>Six wraps with lymphatic work between them. Booked as a course because one wrap does nothing that lasts past the weekend.</p>
+          </div>
+          <div class="ix-meta"><span>6 × 60 min</span><b>$540</b></div>
+        </li>
+        <li>
+          <span class="ix-n">06</span>
+          <div class="ix-main">
+            <h3>Lymphatic drainage</h3>
+            <p>Manual drainage for puffiness and post-travel swelling. Often booked the day before something.</p>
+          </div>
+          <div class="ix-meta"><span>60 min</span><b>$115</b></div>
+        </li>
+        <li>
+          <span class="ix-n">07</span>
+          <div class="ix-main">
+            <h3>Brow mapping &amp; lamination</h3>
+            <p>Mapped to your face before anything is touched. We will talk you out of a shape that will not grow back.</p>
+          </div>
+          <div class="ix-meta"><span>60 min</span><b>$95</b></div>
+        </li>
+        <li>
+          <span class="ix-n">08</span>
+          <div class="ix-main">
+            <h3>Lash lift &amp; tint</h3>
+            <p>Patch tested at the consultation, twenty-four hours ahead. Lasts six to eight weeks.</p>
+          </div>
+          <div class="ix-meta"><span>60 min</span><b>$85</b></div>
+        </li>
+        <li>
+          <span class="ix-n">09</span>
+          <div class="ix-main">
+            <h3>Waxing &amp; threading</h3>
+            <p>Warm and hard wax; threading for faces. Same therapist every time if you would rather — most people do for this.</p>
+          </div>
+          <div class="ix-meta"><span>15–60 min</span><b>from $22</b></div>
+        </li>
+      </ol>
+      <p class="note">Courses of six on any single treatment are 15% off the individual price. Course sessions do not expire for twelve months.</p>
+    </section>
 
-        <article class="svc">
-          <span class="svc-n">03</span>
-          <h3>Brows &amp; Lashes</h3>
-          <p>Lamination, lifts, tints and extensions. We map brows to your face before touching them, and we will talk you out of a shape that won't grow back.</p>
-          <ul>
-            <li>Brow mapping and lamination</li>
-            <li>Lash lift and tint</li>
-            <li>Classic and hybrid extensions</li>
-            <li>Infills</li>
-          </ul>
-        </article>
-
-        <article class="svc">
-          <span class="svc-n">04</span>
-          <h3>Hair Removal</h3>
-          <p>Warm and hard wax, and threading for faces. Same therapist every time if you want one — most people do for this.</p>
-          <ul>
-            <li>Face threading</li>
-            <li>Body waxing</li>
-            <li>Intimate waxing</li>
-            <li>Course of six, any area</li>
-          </ul>
-        </article>
-
-      </div>
-      <p class="svc-foot">Pricing depends on what the consultation turns up, so we quote in the room rather than online. Consultations are free and take twenty minutes.</p>
-    </div>
-  </section>
-
-  <!-- ============ THE METHOD ============ -->
-  <section class="section" id="method">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker">The Serein Method</p>
-        <h2>Map, course, hold</h2>
-        <p class="sec-sub">Three stages, and we tell you at the end of the first whether the second is worth your money.</p>
-      </div>
-      <div class="method-grid">
-        <div class="method">
-          <p class="m-n">Map</p>
-          <h3>Twenty minutes, no charge</h3>
-          <p>A full reading under magnification, photographs for the record, and a patch test if anything we'd use warrants one. You leave with a written plan whether or not you book.</p>
+    <!-- ============================================================
+         03 — THE ONE BIO RAJEU SECTION (full-bleed plate)
+         ============================================================ -->
+    <section class="plate" id="signature">
+      <p class="run gold"><b>03</b> Signature course</p>
+      <div class="plate-grid">
+        <div class="plate-copy">
+          <img class="br-logo" src="img/br-logo.png" alt="Bio Rajeu — biosci, beauty, longevity" width="420" height="498">
+          <h2>The firming course</h2>
+          <p class="tagline">Sculpted. Revived. Radiant.</p>
+          <p>Bio Rajeu is the one line we standardised the studio on, after eight months of trialling things that did not do what the literature said. It is a professional-strength serum built on plant phospholipid micro-vesicles — the carriers cells use to signal to one another — which is how it gets actives further in than a serum you could buy for yourself.</p>
+          <p>Six fifty-minute sessions, a week apart. A fresh 1.5&nbsp;mL vial is opened in front of you each time and worked in over twenty minutes of lymphatic massage. No needles and no downtime.</p>
+          <dl class="plate-spec">
+            <div><dt>Actives</dt><dd>Matrixyn™ peptide complex, <em>Myrothamnus</em> extract, hyaluronic acid, fermented actives</dd></div>
+            <div><dt>Per session</dt><dd>One 1.5 mL / 0.05 fl oz professional vial</dd></div>
+            <div><dt>Included</dt><dd>Mapping consultation, patch test, photographs at sessions 1, 3 and 6</dd></div>
+            <div><dt>Suitability</dt><dd>Hormone-free, third-party tested. Everyone is patch tested at the mapping.</dd></div>
+          </dl>
+          <p class="plate-price"><s>$800</s> <b>$499</b> <span>course of six · new client price</span></p>
+          <p class="plate-fine">Bio Rajeu reports skin refinement at 7 days and renewal at 21. Individual results vary, and we will tell you at the mapping if we think it is not worth it for your skin.</p>
+          <p class="plate-cta">
+            <a class="btn btn-gold" href="#book">Book the free mapping</a>
+            <a class="ext" href="https://biorajeu.com" rel="noopener">biorajeu.com &nearr;</a>
+          </p>
         </div>
-        <div class="method">
-          <p class="m-n">Course</p>
-          <h3>Usually six, a week apart</h3>
-          <p>Spacing matters more than intensity. We adjust actives and pressure each session based on how you presented that day, not on what the plan said in week one.</p>
-        </div>
-        <div class="method">
-          <p class="m-n">Hold</p>
-          <h3>Something you'll actually keep up</h3>
-          <p>A maintenance plan built around what you'll realistically do at home, which is usually three products and not eleven. Reviewed every six months.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       THE ONE BIO RAJEU SECTION
-       ============================================================ -->
-  <section class="signature" id="signature">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker gold">Signature course</p>
-        <h2>The firming course</h2>
-      </div>
-      <div class="sig-grid">
-        <div class="sig-photos">
-          <figure>
-            <img src="img/serum-vials.jpg" alt="Bio Rajeu Firming &amp; Plumping Serum vial with its applicator" width="1280" height="1160" loading="lazy">
-          </figure>
+        <div class="plate-photos">
+          <figure><img src="img/serum-vials.jpg" alt="Bio Rajeu Firming &amp; Plumping Serum vial with its applicator" width="1280" height="1160" loading="lazy"></figure>
           <figure>
             <img src="img/serum-kit.jpg" alt="Bio Rajeu professional kit containing six serum vials" width="1280" height="853" loading="lazy">
-            <figcaption>Six 1.5&nbsp;mL vials — one opened fresh per session</figcaption>
+            <figcaption>Six vials to a kit — one opened per session</figcaption>
           </figure>
         </div>
+      </div>
+    </section>
 
-        <div class="sig-copy">
-          <img class="br-logo" src="img/br-logo.png" alt="Bio Rajeu — biosci, beauty, longevity" width="420" height="498">
-          <p class="tagline">Sculpted. Revived. Radiant.</p>
-          <p>Bio Rajeu is the one product line we standardised the studio on. It's a professional-strength serum built on plant phospholipid micro-vesicles — carriers that get actives further into the skin than a standard serum manages. The active side is a Matrixyn™ peptide complex with <em>Myrothamnus</em> extract, hyaluronic acid and fermented actives.</p>
-          <p>Six 50-minute sessions, a week apart. We open a fresh vial in front of you each time and work it in with a twenty-minute lymphatic massage. No needles and no downtime.</p>
-
-          <table class="spec">
-            <tr><th>Course</th><td>Six 50-minute sessions, one week apart</td></tr>
-            <tr><th>Includes</th><td>Mapping consultation, patch test, photographs at sessions 1, 3 and 6</td></tr>
-            <tr><th>Product</th><td>1.5 mL / 0.05 fl oz professional vial per session</td></tr>
-            <tr><th>Suitability</th><td>Hormone-free and third-party tested. Everyone is patch tested at the mapping.</td></tr>
-          </table>
-
-          <div class="offer">
-            <div><span class="offer-was">$800</span><span class="offer-now">$499</span></div>
-            <p>Course of six · new client price<br><em>Save $301</em></p>
-          </div>
-
-          <p class="disclaim">Bio Rajeu reports skin refinement at 7 days and renewal at 21 days. Individual results vary — we'll tell you at the mapping if we think it isn't worth it for your skin.</p>
-
-          <div class="sig-cta">
-            <a class="btn btn-gold" href="#book">Book the free mapping</a>
-            <a class="link-arrow" href="https://biorajeu.com" rel="noopener">biorajeu.com <span>&rarr;</span></a>
-          </div>
+    <!-- 04 VISITING -->
+    <section id="visiting">
+      <p class="run"><b>04</b> Visiting</p>
+      <dl class="facts">
+        <div>
+          <dt>The consultation</dt>
+          <dd>Twenty minutes and free. A reading under magnification, photographs for your record, a patch test where one is needed, and a written plan at the end. You are not obliged to book anything, and roughly a third of people do not.</dd>
         </div>
-      </div>
-    </div>
-  </section>
+        <div>
+          <dt>Why there are no prices for some things</dt>
+          <dd>Because the honest answer to most enquiries is that it depends what your skin is doing. Where a price is fixed it is printed above. Where it is not, we quote in writing at the end of the consultation and you take it away to think about.</dd>
+        </div>
+        <div>
+          <dt>Getting here</dt>
+          <dd>1120 East 6th Street, above the record shop; the studio door is to the left of theirs. Street parking on East 6th, and the lot on Medina is free after six. First floor, no lift — email ahead and we will move you downstairs.</dd>
+        </div>
+        <div>
+          <dt>Cancelling</dt>
+          <dd>Twenty-four hours and there is no charge. Inside that we charge half, because the room and the therapist are both blocked out. Course sessions do not expire for twelve months, so a missed week is not a problem.</dd>
+        </div>
+        <div>
+          <dt>Staying with one therapist</dt>
+          <dd>You can move between us or stay with one. Tell the desk and we will build the whole course around that person's diary.</dd>
+        </div>
+        <div>
+          <dt>Gift vouchers</dt>
+          <dd>Any amount, valid two years, usable against courses or single appointments. Emailed the same day or posted if you would rather have the card.</dd>
+        </div>
+      </dl>
+      <blockquote class="pull">
+        <p>Sixth course here. The photographs are the thing — you forget what your skin looked like in January.</p>
+        <cite>Sample review · illustrative</cite>
+      </blockquote>
+    </section>
 
-  <!-- ============ STUDIO ============ -->
-  <section class="section bone" id="studio">
-    <div class="wrap studio-grid">
-      <div>
-        <p class="kicker">The studio</p>
-        <h2>Three rooms on East 6th</h2>
-        <p>Serein opened in 2018 above a record shop on East 6th. Three rooms, four therapists, and a front desk that isn't trying to add anything to your bill on the way out — nobody here works on commission.</p>
-        <p>Nadia Okonjo runs the studio and does every mapping consultation herself. Between them the team has forty years in skin, body and brows, and all four are licensed in Texas.</p>
-        <a class="link-arrow dark-arrow" href="#book">Book a consultation <span>&rarr;</span></a>
-      </div>
-      <div class="reviews">
-        <blockquote>
-          <p>Nadia told me at the consultation that two of the four things I came in asking for weren't worth doing. Booked the other two on the spot.</p>
-          <cite>Sample review · illustrative</cite>
-        </blockquote>
-        <blockquote>
-          <p>Sixth course here. The photographs are the thing — you forget what your skin looked like in January.</p>
-          <cite>Sample review · illustrative</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FAQ ============ -->
-  <section class="section" id="faq">
-    <div class="wrap faq-wrap">
-      <div class="sec-head">
-        <p class="kicker">FAQs</p>
-        <h2>Before you book</h2>
-      </div>
-      <details><summary>Why don't you list prices?</summary><p>Because the honest answer to most enquiries is "it depends what your skin is doing". We quote at the end of the free consultation, in writing, and there's no pressure to book on the day.</p></details>
-      <details><summary>Do I have to buy a course?</summary><p>No. Single appointments are available for everything. We're upfront that courses are what actually move the needle, but plenty of people come in once a season and that's fine.</p></details>
-      <details><summary>What happens at the consultation?</summary><p>Twenty minutes. A reading under magnification, photographs for your record, a patch test if needed, and a written plan. It's free and you're not obliged to book anything.</p></details>
-      <details><summary>Is any of this medical?</summary><p>No. We're a beauty studio — no injectables, no needles, no prescriptions. Everything here is topical, manual or wax. If what you want needs a clinician we'll say so and point you elsewhere.</p></details>
-      <details><summary>What's the cancellation policy?</summary><p>Twenty-four hours and there's no charge. Inside that we charge 50%, because the room and the therapist are both blocked. Course sessions don't expire for twelve months.</p></details>
-      <details><summary>Can I use my course with different therapists?</summary><p>You can, but most people don't. Tell the desk if you'd rather stay with one person and we'll build the whole course around their diary.</p></details>
-      <details><summary>Is the studio accessible?</summary><p>We're on the first floor above a record shop and there's no lift, which we know is a problem. Email us and we will make arrangements — we have a ground-floor room available by appointment two doors down.</p></details>
-    </div>
-  </section>
-
-  <!-- ============ BOOK ============ -->
-  <section class="section dark" id="book">
-    <div class="wrap book-grid">
-      <div>
-        <p class="kicker gold">Book</p>
-        <h2>Start with the mapping</h2>
-        <p class="sec-sub">Twenty minutes, free, and you leave with a written plan whether you book anything or not. Tell us roughly when suits.</p>
-        <form class="form" onsubmit="return false;">
-          <div class="row">
-            <label>Name<input type="text" placeholder="Your name" required></label>
-            <label>Email<input type="email" placeholder="you@example.com" required></label>
-          </div>
-          <label>What are you interested in?
-            <select>
-              <option>Skin</option>
-              <option>Body</option>
-              <option>Brows &amp; lashes</option>
-              <option>Hair removal</option>
-              <option>Signature firming course</option>
-              <option>Not sure — just the consultation</option>
-            </select>
-          </label>
-          <label>Times that suit, and anything we should know<textarea rows="3" placeholder="Weekday evenings are best… / I react to most things…"></textarea></label>
-          <button class="btn btn-gold" type="submit">Request the mapping</button>
-          <p class="form-note">Demo form — not connected to a booking system.</p>
-        </form>
-      </div>
-      <aside class="details" id="contact">
-        <p class="foot-head">Find us</p>
-        <p class="addr">1120 East 6th Street<br>Suite 2, Austin, TX 78702<br><span>Above the record shop</span></p>
-        <p class="contact-line"><a href="mailto:hello@sereinstudio.com">hello@sereinstudio.com</a></p>
-        <table class="hours">
-          <tr><th>Tue – Thu</th><td>11:00 — 19:00</td></tr>
-          <tr><th>Friday</th><td>11:00 — 20:00</td></tr>
-          <tr><th>Saturday</th><td>10:00 — 18:00</td></tr>
-          <tr><th>Sun – Mon</th><td>Closed</td></tr>
-        </table>
-        <p class="fineprint">By appointment only. Street parking on East 6th and the lot on Medina is free after 6pm.</p>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ============ SIGNUP ============ -->
-  <section class="signup">
-    <div class="wrap signup-in">
-      <div>
-        <h2>Two emails a month, maximum</h2>
-        <p>Openings when someone cancels, and the odd note when a course goes on offer. Nothing else.</p>
-      </div>
-      <form class="signup-form" onsubmit="return false;">
-        <label class="sr-only" for="su-email">Email address</label>
-        <input id="su-email" type="email" placeholder="you@example.com" required>
-        <button class="btn" type="submit">Sign up</button>
+    <!-- 05 BOOKING -->
+    <section id="book">
+      <p class="run"><b>05</b> Booking</p>
+      <h2 class="book-h">Start with the mapping</h2>
+      <p class="intro">Tell us roughly what you are after and when suits. We answer twice a day, morning and late afternoon.</p>
+      <form class="form" onsubmit="return false;">
+        <div class="f-row">
+          <label>Name<input type="text" placeholder="Your name" required></label>
+          <label>Email<input type="email" placeholder="you@example.com" required></label>
+        </div>
+        <label>Interested in
+          <select>
+            <option>Skin</option>
+            <option>Body</option>
+            <option>Brows &amp; lashes</option>
+            <option>Waxing &amp; threading</option>
+            <option>Signature firming course</option>
+            <option>Not sure — just the consultation</option>
+          </select>
+        </label>
+        <label>Times that suit, and anything we should know<textarea rows="3" placeholder="Weekday evenings are best… / I react to most things…"></textarea></label>
+        <div class="f-send">
+          <button class="btn" type="submit">Request the mapping</button>
+          <p class="f-note">Demo form — not connected to a booking system.</p>
+        </div>
       </form>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <footer class="doc-foot">
+      <p class="colophon">Serein Aesthetic Studio · 1120 East 6th Street, Suite 2, Austin TX 78702 · <a href="mailto:hello@sereinstudio.com">hello@sereinstudio.com</a></p>
+      <p class="notice">A fictional business created as a website design sample. Business name, address, staff and reviews are illustrative. Bio Rajeu product information and photography are genuine.</p>
+    </footer>
 
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="foot-brand">
-        <p class="brand-name foot-name">Serein</p>
-        <p class="brand-sub">Aesthetic Studio · East Austin</p>
-      </div>
-      <div class="foot-menu">
-        <div>
-          <p class="foot-head">Skin</p>
-          <p>Signature firming course<br>Resurfacing course<br>Deep hydration facial<br>Express facial</p>
-        </div>
-        <div>
-          <p class="foot-head">Body</p>
-          <p>Contouring wrap course<br>Salt and enzyme scrub<br>Lymphatic drainage<br>Deep tissue massage</p>
-        </div>
-        <div>
-          <p class="foot-head">Brows &amp; Lashes</p>
-          <p>Brow mapping<br>Lamination<br>Lash lift and tint<br>Extensions and infills</p>
-        </div>
-        <div>
-          <p class="foot-head">Hair Removal</p>
-          <p>Face threading<br>Body waxing<br>Intimate waxing<br>Course of six</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="foot-note">A fictional business created as a website design sample. Business name, address, staff and reviews are illustrative. Bio Rajeu product information and photography are genuine.</p>
-      <p class="foot-contact"><a href="mailto:hello@sereinstudio.com">hello@sereinstudio.com</a><br>1120 East 6th Street, Austin TX</p>
-    </div>
-  </div>
-</footer>
+  </main>
+</div>
 
 <script src="script.js"></script>
 </body>
