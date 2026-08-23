@@ -1,10 +1,26 @@
-# Serein Day Spa
+# Serein — Aesthetic Studio
 
-Demo website for a day spa, built as offline presentation material.
+Demo website for a beauty studio, built as offline presentation material.
 
 This branch holds one complete site at the repository root, so it deploys
 like a standalone repo. The other site lives on its own branch with the
 same layout.
+
+## Design
+
+Monochrome — near-black, bone, and the Bio Rajeu logo gold as the only
+accent. Heavy uppercase display type and full-width black bands carry the
+page in place of photography, which is deliberate: the reference look
+depends on a photo library this site does not have yet. Drop real studio
+photography in and the hero, service grid and studio section all have
+room for it.
+
+Structurally distinct from the Lumière site on the other branch: dark
+sticky nav, full-bleed black hero with an outlined word, a scrolling
+marquee band, a four-column service grid, a named three-stage method, a
+gold email-signup band, and a footer service menu. No price list —
+pricing runs through a free consultation, so the page is a booking funnel
+rather than a menu.
 
 ## Deploying to Cloudflare Pages
 
@@ -23,8 +39,8 @@ without this each one also builds previews of the other's branch.
 
 ```
 index.html    single page, no build step
-style.css     sage palette, serif headings
-script.js     mobile drawer, FAQ accordion
+style.css     monochrome palette, uppercase display type
+script.js     mobile menu, FAQ accordion
 img/          product photography and logo
 ```
 
@@ -41,12 +57,10 @@ All body text meets WCAG AA on its background:
 
 | Colour | On | Ratio |
 | --- | --- | --- |
-| `#5F665B` body | white | 5.9 |
-| `#46553F` accent | white | 8.0 |
-| `#DFC27F` gold | `#333D2D` | 6.6 |
-| `#A0A99A` small print | `#333D2D` | 4.7 |
-
-`#7C8F73` sage is 3.5 on white — borders and icons only, never body text.
+| `#A8A29A` body | `#0E0E0E` | 7.6 |
+| `#DFC27F` gold | `#0E0E0E` | 11.2 |
+| `#6B665E` body | white / bone | 5.1 |
+| `#0E0E0E` on gold band | `#DFC27F` | 11.2 |
 
 ## Content notice
 
