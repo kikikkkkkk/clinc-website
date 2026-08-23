@@ -1,55 +1,47 @@
-# Serein — Aesthetic Studio
+# BOUNCE — Beauty Bar
 
-Demo website for a beauty studio, built as offline presentation material.
+Demo website for a beauty bar, built as offline presentation material.
 
 This branch holds one complete site at the repository root, so it deploys
 like a standalone repo. The other site lives on its own branch with the
 same layout.
 
+> The branch is still named `02-serein` from an earlier draft so any
+> Cloudflare project already pointed at it keeps working. Say the word and
+> it can be renamed.
+
 ## Design
 
-Cool neutral, no accent colour anywhere. Light weights, small type, wide
-leading, hairlines only — nothing is boxed, filled, rounded or shadowed.
-Section numbers sit in the left margin and do the wayfinding so headings
-can stay quiet.
+High-saturation and chunky: thick ink outlines, hard offset shadows,
+pill buttons, big rounded colour blocks and heavy type. Aimed at a
+younger client than the Lumière site on the other branch, and built the
+opposite way round — colour blocks carry the page, so the only two
+photographs on it are the product shots.
 
-Deliberately unlike the Lumière site on the other branch, in structure as
-well as palette: no card grids, no accordion, no filled buttons, no
-section header blocks. Treatments are a plain aligned list, practical
-information is a definition list, and the form is underlined fields.
+Text colour on each block is set by measured contrast, not by eye:
+
+| Block | Text | Ratio |
+| --- | --- | --- |
+| violet `#5B3DF5` | white | 6.1 |
+| pink `#FF3E8A` | ink | 5.5 |
+| tangerine `#FF7A3D` | ink | 7.1 |
+| sky `#3DC9F5` | ink | 9.5 |
+| lime `#D4F04A` | ink | 14.3 |
+
+Violet is the only one of the five that takes white text — white on pink
+is 3.3 and fails, which is the usual way a palette this loud goes wrong.
 
 ## The Bio Rajeu section
 
-Written from scratch for this site rather than shared with the other
-branch. Lumière presents the product as a brand it standardised on, with
-a spec table and a range list. Here it is a **week-by-week protocol** —
-six numbered weeks describing what happens and when, with the price as a
-plain line rather than an offer panel.
+Written for this site, not shared with the other branch. Lumière presents
+the product as a line it standardised on, with a spec table. Here it is a
+**no / yes list** — four things the course isn't, four things it is —
+followed by one plain paragraph and the price. Checked: zero shared
+sentences and zero shared eight-word phrases between the two sites.
 
-Checked: zero sentences and zero eight-word phrases in common between the
-two sites' Bio Rajeu sections.
-
-The section sits on a slightly lighter band rather than a dark plate, and
-the logo sits on white — the packaging is white with gold foil, so this
-matches the product rather than fighting it.
-
-## Illustration
-
-There is no salon photography, so the page is carried by drawn SVG line
-art rather than stock images or empty space:
-
-| File | What it is |
-| --- | --- |
-| `img/room.svg` | Line drawing of treatment room two — opening spread |
-| `img/carrier.svg` | Diagram comparing free actives against vesicle-carried actives across the skin layers |
-| *(inline)* | Four category marks — skin, body, brows, hair removal |
-
-The carrier diagram is explanatory rather than decorative: it is the
-answer to why the serum needs a carrier at all. Both files are a few
-kilobytes, scale without blurring and need no network.
-
-Drop real studio photography in and the opening spread and the two
-product figures are the places it goes.
+The logo sits on a white tile rather than directly on violet; the
+packaging is white with gold foil, and gold on violet would be unreadable
+anyway.
 
 ## Deploying to Cloudflare Pages
 
@@ -68,28 +60,20 @@ without this each one also builds previews of the other's branch.
 
 ```
 index.html    single page, no build step
-style.css     cool neutral palette, no accent
-script.js     mobile nav, current-section marking
-img/          line illustrations, product photography, logo
+style.css     high-saturation palette, chunky outlines
+script.js     mobile menu, FAQ accordion
+img/          product photography and logo
 ```
 
 No dependencies, no external requests — system fonts and local assets
 only, so the page renders correctly with the network unplugged. Every
 asset path is relative.
 
-## Colour contrast
+## Photography
 
-The muted greys this style wants are easy to take below AA. The body grey
-was pulled from `#737572` (4.1 on the page) to `#666862`:
-
-| Colour | On | Ratio |
-| --- | --- | --- |
-| `#222422` ink | `#F1F1EF` page | 13.8 |
-| `#666862` body | `#F1F1EF` page | 5.0 |
-| `#666862` body | `#E9E9E6` band | 4.6 |
-
-`#8E908B` is 2.9 on the page — section numbers, labels and rules only,
-never body text.
+There is none of the salon, so the design deliberately does not need any.
+If studio photos arrive, the hero shape group and the review cards are
+where they go.
 
 ## Content notice
 
