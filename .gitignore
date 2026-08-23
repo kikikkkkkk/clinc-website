@@ -1,0 +1,6 @@
+# Source images dropped in the project root. The copies the site actually
+# uses live in img/ — keeping both would duplicate them in the repo and
+# serve them from the deployed site root.
+/6075405483180233671_121.jpg
+/6075405483180233672_121.jpg
+/leftClogo.png
